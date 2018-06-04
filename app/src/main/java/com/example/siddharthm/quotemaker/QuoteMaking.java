@@ -17,10 +17,11 @@ public class QuoteMaking extends AppCompatActivity {
         setContentView(R.layout.activity_quote_making);
         e = (EditText)findViewById(R.id.editText);
         b = (Button)findViewById(R.id.button15);
-        final String s = e.getText().toString();
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String s = e.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
                 i.putExtra("quote",s);
                 startActivity(i);
