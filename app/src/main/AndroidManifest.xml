@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ColorSelection" />
-        <activity android:name=".QuoteMaking" />
         <activity android:name=".FinalScreen"></activity>
     </application>
 
