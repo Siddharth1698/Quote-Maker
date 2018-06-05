@@ -12,15 +12,15 @@ import android.widget.LinearLayout;
 public class ColorSelection extends AppCompatActivity {
     Button white;
     Button gray;
-    Button lightblue;
+    Button yellow;
     Button blue;
     Button green;
-    Button lightgreen;
+    Button magenta;
     Button orange;
-    Button lightorange;
-    Button purple;
+    Button cyan;
+    Button dkgray;
     Button red;
-    Button lightred;
+    Button ltgray;
     Button black;
     EditText editText;
 
@@ -30,15 +30,15 @@ public class ColorSelection extends AppCompatActivity {
         setContentView(R.layout.activity_color_selection);
         white = (Button)findViewById(R.id.button2);
         gray = (Button)findViewById(R.id.button3);
-        lightblue = (Button)findViewById(R.id.button4);
+        yellow = (Button)findViewById(R.id.button4);
         blue = (Button)findViewById(R.id.button6);
         green = (Button)findViewById(R.id.button7);
-        lightgreen = (Button)findViewById(R.id.button8);
+        magenta = (Button)findViewById(R.id.button8);
         orange = (Button)findViewById(R.id.button9);
-        lightorange = (Button)findViewById(R.id.button10);
-        purple = (Button)findViewById(R.id.button11);
+        cyan = (Button)findViewById(R.id.button10);
+        dkgray = (Button)findViewById(R.id.button11);
         red = (Button)findViewById(R.id.button12);
-        lightred = (Button)findViewById(R.id.button13);
+        ltgray = (Button)findViewById(R.id.button13);
         black = (Button)findViewById(R.id.button14);
         editText = (EditText)findViewById(R.id.editText);
         final LinearLayout l = (LinearLayout)findViewById(R.id.l);
@@ -68,13 +68,13 @@ public class ColorSelection extends AppCompatActivity {
             }
         });
 
-        lightblue.setOnClickListener(new View.OnClickListener() {
+        yellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String s = editText.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
-                i.putExtra("color","lightblue");
+                i.putExtra("color","yellow");
                 i.putExtra("quote",s);
                 startActivity(i);
             }
@@ -114,7 +114,7 @@ public class ColorSelection extends AppCompatActivity {
             }
         });
 
-        lightorange.setOnClickListener(new View.OnClickListener() {
+        cyan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -126,7 +126,7 @@ public class ColorSelection extends AppCompatActivity {
             }
         });
 
-        purple.setOnClickListener(new View.OnClickListener() {
+        dkgray.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -150,7 +150,7 @@ public class ColorSelection extends AppCompatActivity {
             }
         });
 
-        lightred.setOnClickListener(new View.OnClickListener() {
+        ltgray.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -162,7 +162,7 @@ public class ColorSelection extends AppCompatActivity {
             }
         });
 
-        lightgreen.setOnClickListener(new View.OnClickListener() {
+        magenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
