@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class FinalScreen extends AppCompatActivity {
     TextView t;
     LinearLayout l;
+    String colorr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +19,14 @@ public class FinalScreen extends AppCompatActivity {
         l = (LinearLayout)findViewById(R.id.lay);
         Bundle extras = getIntent().getExtras();
         String quoteq = extras.getString("quote");
-        String colorr = extras.getString("color");
+        colorr = extras.getString("color");
+
         t.setText(quoteq);
-        if(colorr == "gray") {
+        if(colorr.equals("gray")) {
             l.setBackgroundColor(Color.GRAY);
+        }
+        if(colorr.equals("red")) {
+            l.setBackgroundColor(Color.RED);
         }
 
 
