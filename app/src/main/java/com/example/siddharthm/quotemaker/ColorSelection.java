@@ -120,7 +120,7 @@ public class ColorSelection extends AppCompatActivity {
 
                 String s = editText.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
-                i.putExtra("color","lightorange");
+                i.putExtra("color","cyan");
                 i.putExtra("quote",s);
                 startActivity(i);
             }
@@ -132,7 +132,7 @@ public class ColorSelection extends AppCompatActivity {
 
                 String s = editText.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
-                i.putExtra("color","purple");
+                i.putExtra("color","dkgray");
                 i.putExtra("quote",s);
                 startActivity(i);
             }
@@ -156,7 +156,7 @@ public class ColorSelection extends AppCompatActivity {
 
                 String s = editText.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
-                i.putExtra("color","lightred");
+                i.putExtra("color","ltgray");
                 i.putExtra("quote",s);
                 startActivity(i);
             }
@@ -168,7 +168,7 @@ public class ColorSelection extends AppCompatActivity {
 
                 String s = editText.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
-                i.putExtra("color","lightgreen");
+                i.putExtra("color","magenta");
                 i.putExtra("quote",s);
                 startActivity(i);
             }
