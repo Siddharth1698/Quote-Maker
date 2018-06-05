@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -21,7 +22,8 @@
         android:layout_height="51dp"
         android:paddingLeft="55dp"
         android:text="MAKE YOUR QUOTE TODAY"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/button"
@@ -29,5 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="70dp"
         android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_red_light"
         android:text="START NOW" />
 </LinearLayout>

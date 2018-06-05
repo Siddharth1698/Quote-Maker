@@ -5,13 +5,15 @@
     android:id="@+id/l"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
     android:orientation="vertical"
     tools:context=".ColorSelection">
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light"
         android:ems="10"
         android:hint="Enter your quote here"
         android:inputType="textPersonName" />
