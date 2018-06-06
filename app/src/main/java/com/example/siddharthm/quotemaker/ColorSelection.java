@@ -16,7 +16,7 @@ public class ColorSelection extends AppCompatActivity {
     Button blue;
     Button green;
     Button magenta;
-    Button orange;
+    Button violet;
     Button cyan;
     Button dkgray;
     Button red;
@@ -34,7 +34,7 @@ public class ColorSelection extends AppCompatActivity {
         blue = (Button)findViewById(R.id.button6);
         green = (Button)findViewById(R.id.button7);
         magenta = (Button)findViewById(R.id.button8);
-        orange = (Button)findViewById(R.id.button9);
+        violet = (Button)findViewById(R.id.button9);
         cyan = (Button)findViewById(R.id.button10);
         dkgray = (Button)findViewById(R.id.button11);
         red = (Button)findViewById(R.id.button12);
@@ -102,13 +102,13 @@ public class ColorSelection extends AppCompatActivity {
             }
         });
 
-        orange.setOnClickListener(new View.OnClickListener() {
+        violet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String s = editText.getText().toString();
                 Intent i = new Intent(getApplicationContext(),FinalScreen.class);
-                i.putExtra("color","orange");
+                i.putExtra("color","violet");
                 i.putExtra("quote",s);
                 startActivity(i);
             }

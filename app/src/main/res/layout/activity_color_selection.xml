@@ -73,7 +73,7 @@
             android:id="@+id/button9"
             android:layout_width="127dp"
             android:layout_height="105dp"
-            android:text="orange"
+            android:text="VIOLET"
             app:layout_column="0"
             app:layout_row="2" />
 

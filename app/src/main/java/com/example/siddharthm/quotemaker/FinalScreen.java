@@ -53,6 +53,10 @@ public class FinalScreen extends AppCompatActivity {
         if(colorr.equals("ltgray")){
             l.setBackgroundColor(Color.LTGRAY);
         }
+        if(colorr.equals("violet")){
+            l.setBackgroundColor(Color.rgb(33,22,45));
+            t.setTextColor(Color.WHITE);
+        }
 
     }
 }
